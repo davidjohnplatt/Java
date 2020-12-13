@@ -1,0 +1,27 @@
+! ** JCreator Workspace File (C)2000
+! ********** DO NOT EDIT *********
+
+VERSION := "1.00"
+LABEL := "raceapp"
+
+! Start Project Structure
+#[BeginProject]SOURCE := "raceapp.jcp" #[EndProject]
+
+! Start Last Document Structure
+#[BeginFile]SOURCE := "dataCollect.java" #[EndFile]
+#[BeginFile]SOURCE := "LoadScores.java" #[EndFile]
+#[BeginFile]SOURCE := "DisplayRace.java" #[EndFile]
+#[BeginFile]SOURCE := "makeHTML.java" #[EndFile]
+#[BeginFile]SOURCE := "ErrorFrame.java" #[EndFile]
+#[BeginFile]SOURCE := "Boat.java" #[EndFile]
+#[BeginFile]SOURCE := "DumpTable.java" #[EndFile]
+#[BeginFile]SOURCE := "MainMenu.java" #[EndFile]
+#[BeginFile]SOURCE := "masterSail.java" #[EndFile]
+#[BeginFile]SOURCE := "RaceEditDetail.java" #[EndFile]
+#[BeginFile]SOURCE := "Race.java" #[EndFile]
+#[BeginFile]SOURCE := "Sailor.java" #[EndFile]
+#[BeginFile]SOURCE := "C:\\MyHome\\Java\\exec.bat" #[EndFile]
+#[BeginFile]SOURCE := "ExportSheet.java" #[EndFile]
+
+! Start Breakpoint Structure
+

@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+
+<ViewObject
+   Name="RuSymbicortView1"
+   BindingStyle="Oracle"
+   CustomQuery="true"
+   ComponentClass="symPackage.RuSymbicortView1Impl"
+   MsgBundleClass="oracle.jbo.common.JboResourceBundle"
+   UseGlueCode="false" >
+   <SQLQuery><![CDATA[
+SELECT RuSymbicort.CHAIN,
+       RuSymbicort.STORE_NBR,
+       RuSymbicort.PRESC_NBR,
+       RuSymbicort.TRANS_NBR,
+       RuSymbicort.TRANS_DATE,
+       RuSymbicort.MOLECULE
+FROM RU_SYMBICORT RuSymbicort
+   ]]></SQLQuery>
+   <DesignTime>
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_codeGenFlag2" Value="Access|Coll" />
+      <Attr Name="_isExpertMode" Value="true" />
+   </DesignTime>
+   <ViewAttribute
+      Name="Chain"
+      IsUpdateable="false"
+      IsPersistent="false"
+      PrecisionRule="true"
+      Precision="20"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="CHAIN"
+      Expression="CHAIN"
+      SQLType="VARCHAR" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="20" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="StoreNbr"
+      IsUpdateable="false"
+      IsPersistent="false"
+      PrecisionRule="true"
+      Precision="10"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="STORE_NBR"
+      Expression="STORE_NBR"
+      SQLType="VARCHAR" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="10" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="PrescNbr"
+      IsUpdateable="false"
+      IsPersistent="false"
+      PrecisionRule="true"
+      Precision="20"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="PRESC_NBR"
+      Expression="PRESC_NBR"
+      SQLType="VARCHAR" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="20" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="TransNbr"
+      IsUpdateable="false"
+      IsPersistent="false"
+      PrecisionRule="true"
+      Precision="10"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="TRANS_NBR"
+      Expression="TRANS_NBR"
+      SQLType="VARCHAR" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="10" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="TransDate"
+      IsUpdateable="false"
+      IsPersistent="false"
+      PrecisionRule="true"
+      Type="oracle.jbo.domain.Date"
+      ColumnType="DATE"
+      AliasName="TRANS_DATE"
+      Expression="TRANS_DATE"
+      SQLType="DATE" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="7" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Molecule"
+      IsUpdateable="false"
+      IsPersistent="false"
+      PrecisionRule="true"
+      Precision="15"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="MOLECULE"
+      Expression="MOLECULE"
+      SQLType="VARCHAR" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="15" />
+      </DesignTime>
+   </ViewAttribute>
+</ViewObject>

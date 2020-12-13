@@ -1,0 +1,2 @@
+java -classpath "C:\MyHome\Java\raceapp\classes\SailScore.jar;C:\j2sdk1.4.0_01\jre\lib\ext\mysql-connector-java-2.0.14-bin.jar" -jar SailScore.jar
+REM java  -classpath "C:\j2sdk1.4.0_01\lib;C:\j2sdk1.4.0_01\jre\lib\ext\mysql-connector-java-2.0.14-bin.jar" -jar SailScore.jar

@@ -1,0 +1,16 @@
+<?xml?>
+<workspace>
+	<settings>
+		<label>OracleApp</label>
+	</settings>
+	<users>
+		<user>
+			<path>OracleApp.jcu</path>
+		</user>
+	</users>
+	<projects>
+		<project>
+			<path>OracleJob\OracleJob.jcp</path>
+		</project>
+	</projects>
+</workspace>

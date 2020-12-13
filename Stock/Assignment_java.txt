@@ -1,0 +1,195 @@
+Assignment.javaSearch:     
+
+      Examples
+      Navigation: @ work > projects > examples 
+
+      Sections
+        @ play
+        resume
+        projects
+        linux
+        contact
+
+/*
+ * Copyright (c) 2001 Matthew Feldt. All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided the copyright notice above is
+ * retained.
+ *
+ * THIS SOFTWARE IS PROVIDED ''AS IS'' AND WITHOUT ANY EXPRESSED OR
+ * IMPLIED WARRANTIES.
+ */
+
+/**
+ * Assignment.java
+ *
+ * Java Examples In A Nutshell Copyright (c) 2000 David Flanagan
+ * Exercise 8-3:
+ * Define a class named Assignment that is modeled on the Command class shown
+ * in Example 8-2. Instead of invoking a named method, as Command does,
+ * Assignment should assign a value to a named field of an object. Give your
+ * class a constructor with the following signature:
+ *
+ *     public Assignment(Object target, Field field, Object value);
+ *
+ * Also give it an assign() method that, when invoked, assigns the specified
+ * value to the specified field of the specified object. Assignment should
+ * implement ActionListerner and define an actionPerformed() method that also
+ * performs the assignment. Write a static parse() method for Assignment that is
+ * similar to the parse() method of Command. It should parse strings of the form
+ * fieldname=value and be able to parse boolean, numeric and string values.
+ *
+ * @author Matthew Feldt <matthew@feldt.com>
+ * @version 1.0, 04/18/2001 23:35
+ */
+
+package com.feldt.examples.reflect;
+import java.awt.event.*;
+import java.lang.reflect.*;
+import java.io.*;
+import java.util.*;
+
+/** test class with some fields to work with */
+class TestAssignment {
+    public boolean b;
+    protected int i;
+    protected double d;
+    protected String s;
+
+    public TestAssignment(boolean b, int i, double d, String s) {
+        this.b = b; this.i = i;
+        this.d = d;    this.s = s;
+    }
+
+    public String toString() {
+        return b + ":" + i + ":" + d + ":" + s;
+    }
+}
+
+public class Assignment implements ActionListener {
+    Object target;
+    Field field;
+    Object value;
+
+    public Assignment(Object target, Field field, Object value) {
+        this.target = target;
+        this.field = field;
+        this.value = value;
+    }
+
+    // throws IllegalAccessException if attempting to assign values to
+    // private fields
+    private void assign() throws IllegalAccessException {
+        field.set(target, value);
+    }
+
+    public void actionPerformed(ActionEvent e) {
+        try {
+            assign();
+        } catch(IllegalAccessException ex) {
+            throw new RuntimeException("Assign: " + ex.toString());
+        }
+    }
+
+    public static Assignment parse(Object target, String text)
+            throws IOException, NoSuchFieldException {
+        String fieldName = null;
+        Field field = null;
+        Object value = null;
+
+        // convert string to stream and use StreamTokenizer to parse out tokens
+        StreamTokenizer t = new StreamTokenizer(new StringReader(text));
+
+        // parse the fieldname
+        if (t.nextToken() != t.TT_WORD)
+            throw new IOException("Missing fieldname");
+        field = target.getClass().getDeclaredField(t.sval);
+
+        // parse the fieldname value seperator character '='
+        if (t.nextToken() != '=')
+            throw new IOException("Missing fieldname value seperator '='.");
+
+        // parse the value and determine its type
+        int type = t.nextToken();
+
+        // if TT_WORD value must be Boolean or String
+        if (type == t.TT_WORD) {
+            if (t.sval.equals("true")) {
+                value = new Boolean(true);
+            } else if (t.sval.equals("false")) {
+                value = new Boolean(false);
+            } else {
+                value = new String(t.sval);
+            }
+        // if TT_NUMBER value must be an Integer or Double
+        } else if (type == t.TT_NUMBER) {
+            if ((int)t.nval == t.nval) { // x.0 and true integers evaluate as Integer
+                value = new Integer((int)t.nval);
+            } else {
+                value = new Double(t.nval);
+            }
+        // if single or double quote value must be a quoted string
+        } else if (type == '\'' || type == '"') {
+            value = new String(t.sval);
+        } else { // anything else would be an error
+            throw new IOException("Assignment.parse() unexpected token: " + t.sval);
+        }
+
+        return new Assignment(target, field, value);
+    }
+
+    /** test class */
+    static class Test {
+        public static void main(String[] args) {
+            // create a TestAssignment object to play with
+            TestAssignment t = new TestAssignment(true, 0, 1.25, "hello world");
+            System.out.println(t);
+
+            try {
+                // create Assignment object through constructor and modify
+                // TestAssignment String field 's'
+                Field f = t.getClass().getDeclaredField("s");
+                Assignment a1 = new Assignment(t, f, "you say goodbye");
+                a1.assign();
+                System.out.println(t);
+
+                // create Assignment object through static parse method and
+                // modify TestAssignment boolean field 'b'
+                Assignment a2 = Assignment.parse(t, "b=false");
+                a2.assign();
+                System.out.println(t);
+
+                Assignment a3 = Assignment.parse(t,
+                    "s=\"double quote bounded string\"");
+                a3.assign();
+                System.out.println(t);
+
+                Assignment a4 = Assignment.parse(t,
+                    "s=\'single quote bounded string\'");
+                a4.assign();
+                System.out.println(t);
+
+                Assignment a5 = Assignment.parse(t, "d=2.125");
+                a5.assign();
+                System.out.println(t);
+
+                f = t.getClass().getDeclaredField("i");
+                Assignment a6 = new Assignment(t, f, new Integer(44));
+                a6.assign();
+                System.out.println(t);
+
+            } catch(IllegalAccessException e) {
+                System.out.println(e);
+            } catch(IOException e) {
+                System.out.println(e);
+            } catch(NoSuchFieldException e) {
+                System.out.println(e);
+            }
+        }
+    }
+}
+
+
+
+ 

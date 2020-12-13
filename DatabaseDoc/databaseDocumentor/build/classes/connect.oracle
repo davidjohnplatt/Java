@@ -1,0 +1,1 @@
+jdbc:oracle:thin:@e6501:1521:qpsit,dba_admin,dba_admin

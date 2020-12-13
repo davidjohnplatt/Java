@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+
+<Entity
+   Name="RuSymbicort"
+   DBObjectType="table"
+   DBObjectName="RU_SYMBICORT"
+   AliasName="RuSymbicort"
+   BindingStyle="Oracle"
+   UseGlueCode="false"
+   RowClass="symPackage.RuSymbicortImpl" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_codeGenFlag2" Value="Access" />
+      <AttrArray Name="_publishEvents">
+      </AttrArray>
+   </DesignTime>
+   <Attribute
+      Name="Chain"
+      Precision="20"
+      ColumnName="CHAIN"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="RU_SYMBICORT" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="20" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="StoreNbr"
+      Precision="10"
+      ColumnName="STORE_NBR"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="RU_SYMBICORT" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="10" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="PrescNbr"
+      Precision="20"
+      ColumnName="PRESC_NBR"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="RU_SYMBICORT" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="20" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="TransNbr"
+      Precision="10"
+      ColumnName="TRANS_NBR"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="RU_SYMBICORT" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="10" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="TransDate"
+      ColumnName="TRANS_DATE"
+      Type="oracle.jbo.domain.Date"
+      ColumnType="DATE"
+      SQLType="DATE"
+      TableName="RU_SYMBICORT" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="7" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Molecule"
+      Precision="15"
+      ColumnName="MOLECULE"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="RU_SYMBICORT" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="15" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="RowID"
+      IsUpdateable="false"
+      ColumnName="ROWID"
+      Type="oracle.jbo.domain.RowID"
+      ColumnType="ROWID"
+      SQLType="VARCHAR"
+      TableName="RU_SYMBICORT"
+      PrimaryKey="true" >
+   </Attribute>
+</Entity>

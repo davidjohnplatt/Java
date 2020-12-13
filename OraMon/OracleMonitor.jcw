@@ -1,0 +1,11 @@
+<?xml?>
+<workspace>
+	<settings>
+		<label>OracleMonitor</label>
+	</settings>
+	<users>
+		<user>
+			<path>OracleMonitor.jcu</path>
+		</user>
+	</users>
+</workspace>

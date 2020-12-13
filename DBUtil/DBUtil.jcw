@@ -1,0 +1,15 @@
+! ** JCreator Workspace File (C)2000
+! ********** DO NOT EDIT *********
+
+VERSION := "1.00"
+LABEL := "DBUtil"
+
+! Start Project Structure
+#[BeginProject]SOURCE := "DBUtil.jcp" #[EndProject]
+
+! Start Last Document Structure
+#[BeginFile]SOURCE := "DbUtility.java" #[EndFile]
+#[BeginFile]SOURCE := "DumpTable.java" #[EndFile]
+
+! Start Breakpoint Structure
+

@@ -1,0 +1,4 @@
+select binding,count(*)
+  from iaf_attributes
+ group by binding
+/

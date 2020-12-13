@@ -1,0 +1,977 @@
+</body>
+</html>
+ WIDTH="100%"
+<tbody>
+<TR>
+<TD>USER_AUDSID</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>SEQUENCE_ID</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>AGENT_ID</TD>
+<TD>VARCHAR2(100)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>TREE_DEPTH</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>SID</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>SERIAL</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>USERNAME</TD>
+<TD>VARCHAR2(30)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>PID</TD>
+<TD>VARCHAR2(16)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>LOCK_TYPE</TD>
+<TD>VARCHAR2(90)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>REQUEST_MODE</TD>
+<TD>VARCHAR2(30)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>OBJECT_NAME</TD>
+<TD>VARCHAR2(61)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+</table>
+<P><BR><H2><A name="QUEST_SOO_PARSE_TIME_TRACK">QUEST_SOO_PARSE_TIME_TRACK</A></H2><table BORDER COLS=6 WIDTH="100%"
+<tbody>
+<TR>
+<TD>PARSE_TIME_ELAPSED</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>TIME_STAMP</TD>
+<TD>DATE(7)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+</table>
+<P><BR><H2><A name="QUEST_SOO_PLAN_TABLE">QUEST_SOO_PLAN_TABLE</A></H2><table BORDER COLS=6 WIDTH="100%"
+<tbody>
+<TR>
+<TD>STATEMENT_ID</TD>
+<TD>VARCHAR2(60)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>TIMESTAMP</TD>
+<TD>DATE(7)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>REMARKS</TD>
+<TD>VARCHAR2(2000)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>OPERATION</TD>
+<TD>VARCHAR2(30)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>OPTIONS</TD>
+<TD>VARCHAR2(30)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>OBJECT_NODE</TD>
+<TD>VARCHAR2(128)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>OBJECT_OWNER</TD>
+<TD>VARCHAR2(30)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>OBJECT_NAME</TD>
+<TD>VARCHAR2(30)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>OBJECT_INSTANCE</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>OBJECT_TYPE</TD>
+<TD>VARCHAR2(30)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>SEARCH_COLUMNS</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>ID</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>PARENT_ID</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>POSITION</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>OTHER</TD>
+<TD>LONG(0)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>COLLECTOR</TD>
+<TD>VARCHAR2(31)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>ADDRESS</TD>
+<TD>VARCHAR2(16)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>HASH_VALUE</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>OPTIMIZER</TD>
+<TD>VARCHAR2(255)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>COST</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>CARDINALITY</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>BYTES</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>OTHER_TAG</TD>
+<TD>VARCHAR2(255)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>PARTITION_START</TD>
+<TD>VARCHAR2(255)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>PARTITION_STOP</TD>
+<TD>VARCHAR2(255)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>PARTITION_ID</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>JOIN_TEXT</TD>
+<TD>VARCHAR2(1000)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>FILTER_TEXT</TD>
+<TD>VARCHAR2(1000)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>VIEW_TEXT</TD>
+<TD>VARCHAR2(1000)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+</table>
+<P><BR><H2><A name="QUEST_SOO_SB_BUFFER_BUSY">QUEST_SOO_SB_BUFFER_BUSY</A></H2><table BORDER COLS=6 WIDTH="100%"
+<tbody>
+<TR>
+<TD>CLASS</TD>
+<TD>VARCHAR2(18)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>WAITS</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>PCT_OF_COUNT</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>PCT_OF_TIME</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>LOGICAL_READS</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>RATIO</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>NOTE</TD>
+<TD>VARCHAR2(64)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>TIME</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+</table>
+<P><BR><H2><A name="QUEST_SOO_SB_EVENT">QUEST_SOO_SB_EVENT</A></H2><table BORDER COLS=6 WIDTH="100%"
+<tbody>
+<TR>
+<TD>EVENT</TD>
+<TD>VARCHAR2(64)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>TOTAL_WAITS</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>TIME_WAITED</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>AVERAGE_WAIT</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>PCT_TIME_WAITED</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>PCT_TOTAL_WAITS</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>SUM_WAITS</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>SUM_TIMES</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>NOTE</TD>
+<TD>VARCHAR2(10)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+</table>
+<P><BR><H2><A name="QUEST_SOO_SB_IO_STAT">QUEST_SOO_SB_IO_STAT</A></H2><table BORDER COLS=6 WIDTH="100%"
+<tbody>
+<TR>
+<TD>FILE_NO</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>TABLESPACE_NAME</TD>
+<TD>VARCHAR2(30)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>FILE_NAME</TD>
+<TD>VARCHAR2(513)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>DEVICE_NAME</TD>
+<TD>VARCHAR2(513)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>SHORT_NAME</TD>
+<TD>VARCHAR2(513)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>PHYWRTS</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>PHYRDS</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>PHYBLKWRT</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>PHYBLKRD</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>BLOCKS</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>TOT_IO</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>READTIM</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>WRITETIM</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+</table>
+<P><BR><H2><A name="QUEST_SOO_VERSION">QUEST_SOO_VERSION</A></H2><table BORDER COLS=6 WIDTH="100%"
+<tbody>
+<TR>
+<TD>SOO_FULL_VERSION</TD>
+<TD>VARCHAR2(16)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>SOO_BIN_VERSION</TD>
+<TD>VARCHAR2(16)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>SOO_OBJ_VERSION</TD>
+<TD>VARCHAR2(16)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>QC_FULL_VERSION</TD>
+<TD>VARCHAR2(16)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>MDK_FULL_VERSION</TD>
+<TD>VARCHAR2(16)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>AGENT_FULL_VERSION</TD>
+<TD>VARCHAR2(16)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>ORACLE_VERSION</TD>
+<TD>VARCHAR2(16)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>ORACLE_BANNER</TD>
+<TD>VARCHAR2(200)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>SERVER_MACHINE_NAME</TD>
+<TD>VARCHAR2(100)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>AGENT_PACKAGE_SOO</TD>
+<TD>VARCHAR2(100)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>AGENT_PACKAGE_UNIX</TD>
+<TD>VARCHAR2(100)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>AGENT_PACKAGE_WINDOWS</TD>
+<TD>VARCHAR2(100)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>MDK_NOTE</TD>
+<TD>VARCHAR2(100)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>SOO_NOTE</TD>
+<TD>VARCHAR2(100)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>AGENT_NOTE</TD>
+<TD>VARCHAR2(100)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>QC_NOTE</TD>
+<TD>VARCHAR2(100)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>NOTE</TD>
+<TD>VARCHAR2(200)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+</table>
+<P><BR><H2><A name="RAW_QTAB">RAW_QTAB</A></H2><table BORDER COLS=6 WIDTH="100%"
+<tbody>
+<TR>
+<TD>Q_NAME</TD>
+<TD>VARCHAR2(30)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>MSGID</TD>
+<TD>RAW(16)</TD>
+<TD>NOT NULL</TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>CORRID</TD>
+<TD>VARCHAR2(128)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>PRIORITY</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>STATE</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>DELAY</TD>
+<TD>DATE(7)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>EXPIRATION</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>TIME_MANAGER_INFO</TD>
+<TD>DATE(7)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>LOCAL_ORDER_NO</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>CHAIN_NO</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>CSCN</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>DSCN</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>ENQ_TIME</TD>
+<TD>DATE(7)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>ENQ_UID</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>ENQ_TID</TD>
+<TD>VARCHAR2(30)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>DEQ_TIME</TD>
+<TD>DATE(7)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>DEQ_UID</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>DEQ_TID</TD>
+<TD>VARCHAR2(30)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>RETRY_COUNT</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>EXCEPTION_QSCHEMA</TD>
+<TD>VARCHAR2(30)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>EXCEPTION_QUEUE</TD>
+<TD>VARCHAR2(30)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>STEP_NO</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>RECIPIENT_KEY</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>DEQUEUE_MSGID</TD>
+<TD>RAW(16)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>SENDER_NAME</TD>
+<TD>VARCHAR2(30)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>SENDER_ADDRESS</TD>
+<TD>VARCHAR2(1024)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>SENDER_PROTOCOL</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>USER_DATA</TD>
+<TD>MESSAGE_TYP(1)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+</table>
+<P><BR><H2><A name="RAW_TEST_TAB">RAW_TEST_TAB</A></H2><table BORDER COLS=6 WIDTH="100%"
+<tbody>
+<TR>
+<TD>Q_NAME</TD>
+<TD>VARCHAR2(30)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>MSGID</TD>
+<TD>RAW(16)</TD>
+<TD>NOT NULL</TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>CORRID</TD>
+<TD>VARCHAR2(128)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>PRIORITY</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>STATE</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>DELAY</TD>
+<TD>DATE(7)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>EXPIRATION</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>TIME_MANAGER_INFO</TD>
+<TD>DATE(7)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>LOCAL_ORDER_NO</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>CHAIN_NO</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>CSCN</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>DSCN</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>ENQ_TIME</TD>
+<TD>DATE(7)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>ENQ_UID</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>ENQ_TID</TD>
+<TD>VARCHAR2(30)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>DEQ_TIME</TD>
+<TD>DATE(7)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>DEQ_UID</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>DEQ_TID</TD>
+<TD>VARCHAR2(30)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>RETRY_COUNT</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>EXCEPTION_QSCHEMA</TD>
+<TD>VARCHAR2(30)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>EXCEPTION_QUEUE</TD>
+<TD>VARCHAR2(30)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>STEP_NO</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>RECIPIENT_KEY</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>DEQUEUE_MSGID</TD>
+<TD>RAW(16)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>SENDER_NAME</TD>
+<TD>VARCHAR2(30)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>SENDER_ADDRESS</TD>
+<TD>VARCHAR2(1024)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>SENDER_PROTOCOL</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>USER_DATA</TD>
+<TD>BLOB(4000)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+</table>
+<P><BR><H2><A name="TEST">TEST</A></H2><table BORDER COLS=6 WIDTH="100%"
+<tbody>
+<TR>
+<TD>IDX</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>TXT</TD>
+<TD>CLOB(4000)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>BLB</TD>
+<TD>BLOB(4000)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+</table>
+<P><BR><H2><A name="TEST1">TEST1</A></H2><table BORDER COLS=6 WIDTH="100%"
+<tbody>
+<TR>
+<TD>T</TD>
+<TD>NUMBER(5,2)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>T1</TD>
+<TD>NUMBER(7}</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>T2</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+</table>
+<P><BR><H2><A name="URL_RPT">URL_RPT</A></H2><table BORDER COLS=6 WIDTH="100%"
+<tbody>
+<TR>
+<TD>CLIP_ID</TD>
+<TD>NUMBER</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>NAME</TD>
+<TD>VARCHAR2(256)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>PATH</TD>
+<TD>VARCHAR2(512)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+<TR>
+<TD>URL</TD>
+<TD>VARCHAR2(4000)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+</table>
+<P><BR><H2><A name="URL_TEMP">URL_TEMP</A></H2><table BORDER COLS=6 WIDTH="100%"
+<tbody>
+<TR>
+<TD>URL</TD>
+<TD>VARCHAR2(2000)</TD>
+<TD> </TD>
+<TD>null</TD>
+</TR>
+</table>

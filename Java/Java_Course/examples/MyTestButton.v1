@@ -1,0 +1,29 @@
+import java.awt.*;
+
+public class MyTestButton {
+  private Frame f;
+  public static Button b;
+  public static Button b1;
+
+  public MyTestButton() {
+    f = new Frame("Test");
+    b = new Button("Press Me!");
+    b.setActionCommand("ButtonPressed");
+    b1 = new Button("Press Me Too!");
+    b1.setActionCommand("ButtonPressed");
+  }
+
+  public void launchFrame() {
+    b.addActionListener(new ButtonHandler());
+    b1.addActionListener(new ButtonHandler());
+    f.add(b,BorderLayout.CENTER);
+    f.add(b1,BorderLayout.EAST);
+    f.pack();
+    f.setVisible(true);
+  }
+
+  public static void main(String args[]) {
+    MyTestButton guiApp = new MyTestButton();
+    guiApp.launchFrame();
+  }
+}

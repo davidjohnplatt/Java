@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div style="height: 155px; width: 1500px; -rave-layout: grid" xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html" xmlns:webuijsf="http://www.sun.com/webui/webuijsf">
+    <f:subview id="Header">
+        <h:panelGrid binding="#{Header.headerPanel}" cellpadding="0" cellspacing="0" id="headerPanel"
+            style="height: 144px; left: 0px; top: 0px; position: absolute" width="576">
+            <h:panelGrid binding="#{Header.gridPanel1}" cellpadding="0" cellspacing="0" columns="2" id="gridPanel1"
+                style="background-color: #647b89; height: 113px" width="1200">
+                <webuijsf:staticText binding="#{Header.appNameText}" id="appNameText" style="color: rgb(255, 255, 255); font-size: 36px" text="Movie Administration"/>
+                <h:panelGrid binding="#{Header.padPanel}" id="padPanel" style="height: 72px" width="24"/>
+                <webuijsf:staticText binding="#{Header.poweredByText}" id="poweredByText" style="color: rgb(255, 255, 255)" text="Powered by Netbeans Visual Web Pack"/>
+            </h:panelGrid>
+            <h:panelGrid bgcolor="rgb(221, 226, 238)" binding="#{Header.gridPanel2}" columns="3" id="gridPanel2" style="background-color: rgb(221, 226, 238); height: 24px; width: 100%">
+                <h:panelGrid binding="#{Header.spacePanel}" id="spacePanel" style="height: 24px" width="575"/>
+                <webuijsf:imageHyperlink binding="#{Header.imageHyperlink1}" id="imageHyperlink1" imageURL="/resources/home.gif" text="Creator Home" url="http://developers.sun.com/jscreator"/>
+                <webuijsf:imageHyperlink binding="#{Header.imageHyperlink2}" id="imageHyperlink2" imageURL="/resources/help.gif" text="Help" url="/Readme.html"/>
+            </h:panelGrid>
+        </h:panelGrid>
+    </f:subview>
+</div>

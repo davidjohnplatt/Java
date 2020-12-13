@@ -1,0 +1,34 @@
+<?xml?>
+<workspace_user>
+	<active_project>
+		<label>OracleMonitor</label>
+	</active_project>
+	<projects>
+		<project>
+			<label>OracleMonitor</label>
+			<showfiles>false</showfiles>
+			<folderitem>
+				<path>OracleMonitor\src</path>
+				<ext/>
+			</folderitem>
+			<folderitem>
+				<path>OracleMonitor\classes</path>
+				<ext/>
+			</folderitem>
+		</project>
+	</projects>
+	<open_files>
+		<docitem>
+			<path>OracleMonitor\src\OracleMonitor.java</path>
+			<source>true</source>
+			<index>0</index>
+			<active>false</active>
+		</docitem>
+		<docitem>
+			<path>OracleMonitor\src\OracleUtil.java</path>
+			<source>true</source>
+			<index>1</index>
+			<active>true</active>
+		</docitem>
+	</open_files>
+</workspace_user>

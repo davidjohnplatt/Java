@@ -1,0 +1,16 @@
+<?xml?>
+<workspace>
+	<settings>
+		<label>mysql</label>
+	</settings>
+	<users>
+		<user>
+			<path>mysql.jcu</path>
+		</user>
+	</users>
+	<projects>
+		<project>
+			<path>mysql.jcp</path>
+		</project>
+	</projects>
+</workspace>

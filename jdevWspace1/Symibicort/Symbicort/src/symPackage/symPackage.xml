@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE JboPackage SYSTEM "jbo_03_01.dtd">
+
+<JboPackage
+   Name="symPackage"
+   SeparateXMLFiles="true"
+   PackageName="symPackage" >
+   <DesignTime>
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_ejbPackage" Value="false" />
+   </DesignTime>
+   <Containee
+      Name="RuSymbicort"
+      FullName="symPackage.RuSymbicort"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="RuSymbicortView"
+      FullName="symPackage.RuSymbicortView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="RuSymbicortView1"
+      FullName="symPackage.RuSymbicortView1"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="symmodule"
+      FullName="symPackage.symmodule"
+      ObjectType="AppModule" >
+   </Containee>
+</JboPackage>

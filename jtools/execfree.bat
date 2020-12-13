@@ -1,0 +1,1 @@
+java -classpath "C:\MyHome\Java\jtools;C:\Program Files\Oracle\JDeveloper 3.2.3\lib\jdev-rt.zip;C:\Program Files\Oracle\JDeveloper 3.2.3\jdbc\lib\oracle8.1.7\classes12.zip;C:\Program Files\Oracle\JDeveloper 3.2.3\lib\connectionmanager.zip;C:\Program Files\Oracle\JDeveloper 3.2.3\lib\dacf.zip;C:\Program Files\Oracle\JDeveloper 3.2.3\infobus\lib\infobus.jar"  free

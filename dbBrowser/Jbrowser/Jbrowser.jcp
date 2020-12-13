@@ -1,0 +1,23 @@
+! ** JCreator Project File (C)2000
+! ********** DO NOT EDIT *********
+
+VERSION := "1.10"
+LABEL := "Jbrowser"
+JDKPROFILE := "j2sdk1.4.0_01"
+ACTIVE := "1"
+OUTPUTPATH := "classes"
+COMPILER := "<Default>"
+
+! Start RunTime Configuration Structure
+#[BeginRunTime]LABEL := "<Default>" RUNAPPLIC := "" RUNAPPLET := "" PARAM := "" RUN := "DatabaseBrowse" CHECK := "10" #[EndRunTime]
+! Start Required Libraries Structure
+#[BeginRLibrary]LABEL := "mysql" #[EndRLibrary]
+
+! Start Project Folder Structure
+#[BeginFolder]
+LABEL := "Root"
+FILTER := ""
+
+#[BeginFile]SOURCE := "ResultsModel.java" #[EndFile]
+#[BeginFile]SOURCE := "DatabaseBrowser.java" #[EndFile]
+#[EndFolder]

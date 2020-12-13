@@ -1,0 +1,15 @@
+Albacore,90.9
+Buccaneer,87.1
+CL16,94
+Code 40,100
+Evans16,110
+Fireball,86.0
+Laser,89.4
+Paceship 20,100
+Sandpiper,113.0
+Siren,114.0
+SR71,82
+Megabyte,89.4
+Topper,115.2
+VicCat,82
+Wayfarer,91.8

@@ -1,0 +1,47 @@
+<?xml?>
+<workspace_user>
+	<open_files>
+		<docitem>
+			<path>DatabaseUtilities.java</path>
+			<source>true</source>
+			<index>0</index>
+			<active>false</active>
+		</docitem>
+		<docitem>
+			<path>DBResultsTableModel.java</path>
+			<source>true</source>
+			<index>1</index>
+			<active>false</active>
+		</docitem>
+		<docitem>
+			<path>DriverUtilities.java</path>
+			<source>true</source>
+			<index>2</index>
+			<active>false</active>
+		</docitem>
+		<docitem>
+			<path>ExitListener.java</path>
+			<source>true</source>
+			<index>3</index>
+			<active>false</active>
+		</docitem>
+		<docitem>
+			<path>JTableDisplayResults.java</path>
+			<source>true</source>
+			<index>4</index>
+			<active>false</active>
+		</docitem>
+		<docitem>
+			<path>WindowUtilities.java</path>
+			<source>true</source>
+			<index>5</index>
+			<active>false</active>
+		</docitem>
+		<docitem>
+			<path>ErrorFrame.java</path>
+			<source>true</source>
+			<index>6</index>
+			<active>true</active>
+		</docitem>
+	</open_files>
+</workspace_user>

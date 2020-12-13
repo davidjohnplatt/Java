@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+  <head>
+    <title>Movie Administration -- readme</title>
+  </head>
+<body>
+
+<P STYLE="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.03in; padding-left: 0in; padding-right: 0in">
+<BR><BR>
+</P>
+<P STYLE="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.03in; padding-left: 0in; padding-right: 0in">
+<B>README</B></P>
+
+<p><B>Movie Administration</B> is an example that demonstrates how to 
+use virtual forms, ObjectListDataProvider, and RequestBean in Visual Web Pack.  
+</p>
+<p>
+The Movie Administration example is a hypothetical administrative application for a movie rental business. 
+The business maintains data about its movie collection in a data store, and the administrative application enables 
+employees to make changes to that data. The business also has a separate external web site that enables customers 
+to browse the collection. The same data store is used for the external web site.</p>
+<p>
+An employee using the application can view the movies in a particular genre by making a selection in 
+the <B>Current Genre</B> dropdown list. The <B>Movies</B> table shows the movies in the current genre.
+Within the Movies table, the title, year, 
+length in minutes, rating, image URL, and description fields can be edited; the 
+changes are saved when the employee clicks the <B>Update</B> button or uses the 
+table's paging controls (when available). The employee can remove a movie from 
+the collection by clicking the <B>Remove</B> button in one of the rows. Clicking 
+the <B>Preview</B> button in one of the rows navigates to 
+<CODE>Preview.jsp</CODE>, which enables the employee to preview the detail page 
+for a movie as it would be seen by a customer browsing the external web site. (<CODE>Preview.jsp</CODE> 
+also enables the employee to change the genre of the movie being previewed.) A 
+separate set of controls appears below the table for adding a movie to the 
+collection.</P>
+<p>For more information, see the accompanying online technical article "How to Use Virtual Forms."
+<p><B>Installation</B>
+<ol>
+<li>Open both the Movies Class Library project and the MovieAdmin project (this project).</li>
+<li>If the MovieAdmin project is not set as the main project, right-click on the MovieAdmin project and choose "Set Main Project."</li>
+<li>In the Projects window, right-click the MovieAdmin project node, and choose <b>Properties</b> 
+from the contextual menu. </li>
+<li>Within the Project Properties dialog box, in the tree on the left, click on 
+<b>Libraries</b>. Then click the <b>Add Project</b> button. </li>
+<li>In the Add
+Project dialog box, browse to and click on the MoviesClassLibrary
+project, and then click the Add Project JAR Files button.
+</li><li>In the Project
+Properties dialog box, click the OK button.
+</li>
+<li>In the Projects window, right-click the MoviesClassLibrary project node, and 
+choose <b>Build Project</b> from the contextual menu.</li>
+</ol>
+</p>
+</p>
+</body>
+</html>

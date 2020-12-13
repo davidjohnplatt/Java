@@ -1,0 +1,24 @@
+! ** JCreator Project File (C)2000
+! ********** DO NOT EDIT *********
+
+VERSION := "1.10"
+LABEL := "DBUtil"
+JDKPROFILE := "j2sdk1.4.0_01"
+ACTIVE := "1"
+OUTPUTPATH := "classes"
+COMPILER := "<Default>"
+
+! Start RunTime Configuration Structure
+#[BeginRunTime]LABEL := "<Default>" RUNAPPLIC := "" RUNAPPLET := "" PARAM := "" RUN := "myprojects.dbutil.DBUtil" CHECK := "10" #[EndRunTime]
+! Start Required Libraries Structure
+#[BeginRLibrary]LABEL := "classes12.zip" #[EndRLibrary]
+
+! Start Project Folder Structure
+#[BeginFolder]
+LABEL := "Root"
+FILTER := ""
+
+#[BeginFile]SOURCE := "DBUtil.java" #[EndFile]
+#[BeginFile]SOURCE := "DbUtility.java" #[EndFile]
+#[BeginFile]SOURCE := "DumpTable.java" #[EndFile]
+#[EndFolder]

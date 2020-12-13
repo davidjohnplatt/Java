@@ -1,0 +1,11 @@
+PATH=$PATH:/usr/java1.1/bin
+
+CLASSPATH=.:/usr/java1.1/bin/lib/
+CLASSPATH=$CLASSPATH:/export/home/oracle/product/8.1.5/jdbc/lib/classes111.zip
+CLASSPATH=$CLASSPATH:/export/home/oracle/product/8.1.5/lib
+export CLASSPATH
+
+LD_LIBRARY_PATH=/usr/java1.1/lib/
+LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/export/home/oracle/product/8.1.5/jdbc/lib
+LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/export/home/oracle/product/8.1.5/lib
+export LD_LIBRARY_PATH

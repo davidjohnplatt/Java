@@ -1,0 +1,15 @@
+! ** JCreator Workspace File (C)2000
+! ********** DO NOT EDIT *********
+
+VERSION := "1.00"
+LABEL := "dbBrowser"
+
+! Start Project Structure
+#[BeginProject]SOURCE := "Jbrowser\\Jbrowser.jcp" #[EndProject]
+
+! Start Last Document Structure
+#[BeginFile]SOURCE := "Jbrowser\\ResultsModel.java" #[EndFile]
+#[BeginFile]SOURCE := "Jbrowser\\DatabaseBrowser.java" #[EndFile]
+
+! Start Breakpoint Structure
+

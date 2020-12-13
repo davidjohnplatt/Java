@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+
+<ViewObject
+   Name="RuSymbicortView"
+   SelectList="RuSymbicort.CHAIN, 
+       RuSymbicort.STORE_NBR, 
+       RuSymbicort.PRESC_NBR, 
+       RuSymbicort.TRANS_NBR, 
+       RuSymbicort.TRANS_DATE, 
+       RuSymbicort.MOLECULE, 
+       RuSymbicort.ROWID"
+   FromList="RU_SYMBICORT RuSymbicort"
+   BindingStyle="Oracle"
+   CustomQuery="false"
+   ComponentClass="symPackage.RuSymbicortViewImpl"
+   MsgBundleClass="oracle.jbo.common.JboResourceBundle"
+   UseGlueCode="false" >
+   <DesignTime>
+      <Attr Name="_version" Value="10.1.2.17.96" />
+      <Attr Name="_codeGenFlag2" Value="Access|Coll" />
+      <Attr Name="_isExpertMode" Value="false" />
+   </DesignTime>
+   <EntityUsage
+      Name="RuSymbicort"
+      Entity="symPackage.RuSymbicort" >
+      <DesignTime>
+         <Attr Name="_EntireObjectTable" Value="false" />
+         <Attr Name="_queryClause" Value="false" />
+      </DesignTime>
+   </EntityUsage>
+   <ViewAttribute
+      Name="Chain"
+      PrecisionRule="true"
+      EntityAttrName="Chain"
+      EntityUsage="RuSymbicort"
+      AliasName="CHAIN" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="StoreNbr"
+      PrecisionRule="true"
+      EntityAttrName="StoreNbr"
+      EntityUsage="RuSymbicort"
+      AliasName="STORE_NBR" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="PrescNbr"
+      PrecisionRule="true"
+      EntityAttrName="PrescNbr"
+      EntityUsage="RuSymbicort"
+      AliasName="PRESC_NBR" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="TransNbr"
+      PrecisionRule="true"
+      EntityAttrName="TransNbr"
+      EntityUsage="RuSymbicort"
+      AliasName="TRANS_NBR" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="TransDate"
+      PrecisionRule="true"
+      EntityAttrName="TransDate"
+      EntityUsage="RuSymbicort"
+      AliasName="TRANS_DATE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Molecule"
+      PrecisionRule="true"
+      EntityAttrName="Molecule"
+      EntityUsage="RuSymbicort"
+      AliasName="MOLECULE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="RowID"
+      IsUpdateable="false"
+      PrecisionRule="true"
+      EntityAttrName="RowID"
+      EntityUsage="RuSymbicort"
+      AliasName="ROWID" >
+   </ViewAttribute>
+</ViewObject>

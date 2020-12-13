@@ -1,0 +1,26 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BC4JConfig>
+   <AppModuleConfigBag>
+      <AppModuleConfig name="symmoduleLocal">
+         <AppModuleJndiName>symPackage.symmodule</AppModuleJndiName>
+         <DeployPlatform>LOCAL</DeployPlatform>
+         <JDBCName>db9ij</JDBCName>
+         <ApplicationName>symPackage.symmodule</ApplicationName>
+         <jbo.project>Symbicort</jbo.project>
+      </AppModuleConfig>
+   </AppModuleConfigBag>
+   <ConnectionDefinition name="db9ij">
+      <ENTRY name="JDBC_PORT" value="1521"/>
+      <ENTRY name="ConnectionType" value="JDBC"/>
+      <ENTRY name="HOSTNAME" value="localhost"/>
+      <ENTRY name="user" value="rxadmin"/>
+      <ENTRY name="ConnectionName" value="db9ij"/>
+      <ENTRY name="SID" value="DB9I"/>
+      <ENTRY name="JdbcDriver" value="oracle.jdbc.driver.OracleDriver"/>
+      <ENTRY name="password">
+         <![CDATA[{904}05F947CDDFBEE94FE4909A6D17383131EE]]>
+      </ENTRY>
+      <ENTRY name="ORACLE_JDBC_TYPE" value="thin"/>
+      <ENTRY name="DeployPassword" value="true"/>
+   </ConnectionDefinition>
+</BC4JConfig>

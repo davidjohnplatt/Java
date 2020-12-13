@@ -1,0 +1,28 @@
+<?xml?>
+<workspace_user>
+	<active_project>
+		<label>OracleJob</label>
+	</active_project>
+	<projects>
+		<project>
+			<label>OracleJob</label>
+			<showfiles>false</showfiles>
+			<folderitem>
+				<path>OracleJob\classes</path>
+				<ext/>
+			</folderitem>
+			<folderitem>
+				<path>OracleJob\src</path>
+				<ext/>
+			</folderitem>
+		</project>
+	</projects>
+	<open_files>
+		<docitem>
+			<path>OracleJob\src\OracleJob.java</path>
+			<source>true</source>
+			<index>0</index>
+			<active>true</active>
+		</docitem>
+	</open_files>
+</workspace_user>

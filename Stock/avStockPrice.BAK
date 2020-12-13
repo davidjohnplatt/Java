@@ -1,0 +1,19 @@
+import java.io.*;
+
+public class avgStockPrice
+
+{
+
+  public static void main (string [] args)
+  {
+    String fname=(args.length <= 0) ? "avStockPrice.java": args[0];
+
+    try
+    {
+       
+    }
+  }
+
+
+
+}

@@ -1,0 +1,19 @@
+SERVER training201 80f07820 7582
+DAEMON solectd /export/home/IAF/license 
+FEATURE iafslave solectd 2.700 1-jan-00 1 4B2C0041B6EA08B970CF \
+	 VENDOR_STRING="Solect Technology Group" ck=25
+FEATURE iafadmin solectd 2.700 1-jan-00 0 1BDC80D1DEC04FBEF4B7 \
+	 VENDOR_STRING="Solect Technology Group" HOSTID=80f07820 ck=129
+FEATURE iafar solectd 2.700 1-jan-00 0 9B1C60918146120C6859 \
+	 VENDOR_STRING="Solect Technology Group" HOSTID=80f07820 ck=160
+FEATURE iafcc solectd 2.700 1-jan-00 0 ABCCB011212D73DC2E94 \
+	 VENDOR_STRING="Solect Technology Group" HOSTID=80f07820 ck=245
+FEATURE iafmilan solectd 2.700 1-jan-00 0 7BAC10D18177986C2FD4 \
+	 VENDOR_STRING="Solect Technology Group" HOSTID=80f07820 ck=53
+
+#NOTE: You can edit the hostname on the server line (1st arg),
+#      the port address on the server line (3rd arg), the path
+#      to the daemon on the daemon line (2nd arg), or any
+#      right-half of a string (b) of the form a=b where (a) is all
+#      lowercase. (For example, xxx in  vendor_info="xxx" can be
+#      changed).  Any other changes will invalidate this license.

@@ -1,0 +1,36 @@
+! ** JCreator Project File (C)2000
+! ********** DO NOT EDIT *********
+
+VERSION := "1.10"
+LABEL := "raceapp"
+JDKPROFILE := "j2sdk1.4.0_01"
+ACTIVE := "1"
+OUTPUTPATH := "classes"
+COMPILER := "<Default>"
+
+! Start RunTime Configuration Structure
+#[BeginRunTime]LABEL := "<Default>" RUNAPPLIC := "<Default>" RUNAPPLET := "<Default>" RUNDEBUG := "<Default>" PARAM := "" RUN := "dataCollect" CHECK := "11" #[EndRunTime]
+#[BeginRunTime]LABEL := "MasterSail" RUNAPPLIC := "<Default>" RUNAPPLET := "<Default>" RUNDEBUG := "<Default>" PARAM := "" RUN := "MainMenu" CHECK := "0" #[EndRunTime]
+
+! Start Required Libraries Structure
+
+! Start Project Folder Structure
+#[BeginFolder]
+LABEL := "Root"
+FILTER := ""
+
+#[BeginFile]SOURCE := "ExportSheet.java" #[EndFile]
+#[BeginFile]SOURCE := "Race.java" #[EndFile]
+#[BeginFile]SOURCE := "MainMenu.java" #[EndFile]
+#[BeginFile]SOURCE := "Boat.java" #[EndFile]
+#[BeginFile]SOURCE := "rating.java" #[EndFile]
+#[BeginFile]SOURCE := "makeHTML.java" #[EndFile]
+#[BeginFile]SOURCE := "dataCollect.java" #[EndFile]
+#[BeginFile]SOURCE := "masterSail.java" #[EndFile]
+#[BeginFile]SOURCE := "connectDb.java" #[EndFile]
+#[BeginFile]SOURCE := "LoadScores.java" #[EndFile]
+#[BeginFile]SOURCE := "DisplayRace.java" #[EndFile]
+#[BeginFile]SOURCE := "ErrorFrame.java" #[EndFile]
+#[BeginFile]SOURCE := "Sailor.java" #[EndFile]
+#[BeginFile]SOURCE := "RaceEditDetail.java" #[EndFile]
+#[EndFolder]
